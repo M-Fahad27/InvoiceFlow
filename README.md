@@ -311,7 +311,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 *If this project helped you, give it a ⭐ on GitHub!*
 
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/YOUR-PROFILE)
-[![Portfolio](https://img.shields.io/badge/View-Portfolio-000?style=for-the-badge&logo=vercel)](https://your-portfolio.com)
+[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/fahad2703)
+[![Portfolio](https://img.shields.io/badge/View-Portfolio-000?style=for-the-badge&logo=vercel)](https://fahadai.site)
 
 </div>
