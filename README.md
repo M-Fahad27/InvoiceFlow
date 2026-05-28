@@ -45,54 +45,9 @@ InvoiceFlow AI is a fully automated invoice processing pipeline that:
 
 ## 🏗️ Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    InvoiceFlow AI                        │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│   📧 Gmail Trigger (watches inbox for invoices)         │
-│          │                                              │
-│          ▼                                              │
-│   🔀 Smart Router (PDF or Image?)                       │
-│          │                    │                          │
-│          ▼                    ▼                          │
-│   📄 PDF Extractor     🔍 OCR.space                     │
-│   (Extract from File)  (Image → Text)                   │
-│          │                    │                          │
-│          ▼                    ▼                          │
-│   📝 Standardize       📝 Standardize                   │
-│   (Set extractedText)  (Set extractedText)              │
-│          │                    │                          │
-│          └────────┬───────────┘                          │
-│                   ▼                                      │
-│          🔗 Merge Node                                   │
-│                   │                                      │
-│                   ▼                                      │
-│          🤖 Groq AI (LLaMA 3.3-70B)                     │
-│          (Extract structured JSON)                       │
-│                   │                                      │
-│                   ▼                                      │
-│          ⚙️ Validation & Status                          │
-│          (Parse JSON + auto-approve logic)               │
-│                   │                                      │
-│          ┌───────┴────────┐                              │
-│          ▼                ▼                              │
-│   ✅ Auto-Approve    ⚠️ Human Review                    │
-│   (≤ $500)           (> $500)                           │
-│          │                │                              │
-│          │           📧 Email Alert                      │
-│          │           (Send & Wait)                       │
-│          │                │                              │
-│          │           👤 Approval                         │
-│          │           (Approve/Reject)                    │
-│          │                │                              │
-│          └───────┬────────┘                              │
-│                  ▼                                       │
-│          📊 Google Sheets                                │
-│          (Log invoice data)                              │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
+<div align="center">
+  <img src="screenshots/architecture.svg" alt="InvoiceFlow AI Architecture" width="700"/>
+</div>
 
 ---
 
